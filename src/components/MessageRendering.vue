@@ -1,18 +1,22 @@
 <script setup>
-import {ref} from 'vue';
+import {ref, computed} from 'vue';
 
 const msg = ref('Mon apprentissage en vue js');
-
 const count = ref(0);
+const doubleCount = computed(() => count.value * 2);
 function increment(){
   count.value++;
 }
+// Propriétés calculées (Computed)
+
 </script>
 
 <template>
     <p class="text"> Voir : {{ msg }} </p>
     <p>Compteur : {{ count }}</p>
+    <p>Compteur : {{ doubleCount }}</p>
     <button @click="increment">Incrementer</button>
+    
 </template>
 
 <style scoped>
