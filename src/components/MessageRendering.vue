@@ -1,11 +1,18 @@
 <script setup>
 import {ref} from 'vue';
 
-const msg = ref('Mon message');
+const msg = ref('Mon apprentissage en vue js');
+
+const count = ref(0);
+function increment(){
+  count.value++;
+}
 </script>
 
 <template>
     <p class="text"> Voir : {{ msg }} </p>
+    <p>Compteur : {{ count }}</p>
+    <button @click="increment">Incrementer</button>
 </template>
 
 <style scoped>
@@ -16,8 +23,8 @@ h1 {
   top: -10px;
 }
 .text{
-  color:green;
-  font-size: 3rem;
+  color:rgb(3, 199, 3);
+  font-size: 2rem;
 }
 
 h3 {
