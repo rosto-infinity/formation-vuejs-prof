@@ -1,8 +1,11 @@
 <script setup>
+import MessageRendering from './components/MessageRendering.vue';
+
 
 </script>
 
 <template>
+<MessageRendering />
  
 </template>
 

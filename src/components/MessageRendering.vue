@@ -1,9 +1,11 @@
 <script setup>
+import {ref} from 'vue';
 
+const msg = ref('Mon message');
 </script>
 
 <template>
-
+    <p class="text"> Voir : {{ msg }} </p>
 </template>
 
 <style scoped>
@@ -12,6 +14,10 @@ h1 {
   font-size: 2.6rem;
   position: relative;
   top: -10px;
+}
+.text{
+  color:green;
+  font-size: 3rem;
 }
 
 h3 {
