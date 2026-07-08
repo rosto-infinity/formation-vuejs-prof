@@ -9,6 +9,9 @@ const count = ref(0);
  const color = ref('red')
  const fontSize =ref(16)
 
+
+ const imageUrl = ref('/images/favicon.ico');
+
  // Propriétés calculées (Computed)
 const doubleCount = computed(() => count.value * 2);
 
@@ -21,6 +24,7 @@ function increment(){
 </script>
 
 <template>
+  <img :src="imageUrl" alt="Mon logo" srcset="">
     <p class="text1"> Voir : {{ msg }} </p>
     <p>Compteur : {{ count }}</p>
     <p>Compteur : {{ doubleCount }}</p>
