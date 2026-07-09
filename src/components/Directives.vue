@@ -14,6 +14,7 @@ const isDisabled = ref(true);
 const isRequired = ref(false);
 const isChecked = ref(true);
 
+// Lier de Multiples Attributs d'un seul coup
 </script>
 
 <template>
