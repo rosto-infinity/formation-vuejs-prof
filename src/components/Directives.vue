@@ -1,6 +1,6 @@
 <script setup>
 
-import { ref } from "vue";
+import { ref, reactive } from "vue";
 //1-----------------------------################
 // const imageUrl = ref("/images/favicon.ico");
 const linkUrl = ref("https://vuejs.org");
@@ -15,6 +15,25 @@ const isRequired = ref(false);
 const isChecked = ref(true);
 
 // Lier de Multiples Attributs d'un seul coup
+const inputAttrs = reactive({
+  id: "email-field",
+  type: "email",
+  placeholder: "Entrez votre adresse email",
+  required: true,
+});
+
+const imageAttrs = ref({
+  src: "/images/avatar.jpg",
+  alt: "Avatar Utilisateur",
+  width: 100,
+  height: 100,
+});
+
+
+const attributeName = ref("title"); // L'attribut ciblé est "title"
+const attributeValue = ref("Ceci est une infobulle !");
+
+
 </script>
 
 <template>
@@ -40,5 +59,14 @@ const isChecked = ref(true);
   <input :required="isRequired" />
 
   <!-- Résultat : <input type="checkbox" checked> -->
-  <input type="checkbox" :checked="isChecked" />
+  <input type="checkbox" :checked="isChecked" /><br><br>
+
+   <!-- Déballe ("splat") absolument tous les attributs de l'objet d'un coup ! -->
+  <input v-bind="inputAttrs" />
+  <!-- Rendu HTML : <input id="email-field" type="email" placeholder="..." required> -->
+
+  <img v-bind="imageAttrs" />
+  <!-- Rendu HTML : <img src="/images/avatar.jpg" alt="..." width="100" height="100"> -->
+
+
 </template>
