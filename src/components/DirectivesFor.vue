@@ -96,6 +96,9 @@ function toggle() {
         {{ product.name }}
       </li>
     </ul>
+
   </div>
   </div>
+  <p>Message is: {{ message }}</p>
+<input v-model="message" placeholder="edit me" />
 </template>

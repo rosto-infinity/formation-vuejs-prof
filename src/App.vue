@@ -3,6 +3,7 @@
 
 import DirectivesCond from './components/DirectivesCond.vue';
 import DirectivesFor from './components/DirectivesFor.vue';
+import DirectivesVmodel from './components/DirectivesVmodel.vue';
 // import Directives from './components/Directives.vue';
 import MessageRendering from './components/MessageRendering.vue';
 
@@ -13,7 +14,8 @@ import MessageRendering from './components/MessageRendering.vue';
 <!-- <MessageRendering /> -->
 <!-- <Directives /> -->
 <!-- <DirectivesCond/> -->
-<DirectivesFor/>
+<!-- <DirectivesFor/> -->
+<DirectivesVmodel/>
  
 </template>
 
