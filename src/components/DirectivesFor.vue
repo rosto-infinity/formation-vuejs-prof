@@ -67,7 +67,7 @@ const categories = ref([
   <!-- Affiche 1, 2, 3, 4, 5 -->
   <span v-for="n in 5" :key="n">{{ n }}</span>
 
-  <!-- Pratique pour créer 10 fausses cartes (Skeleton Loaders) -->
+  <!-- --Pratique pour créer 10 fausses cartes (Skeleton Loaders) -->
   <div v-for="i in 10" :key="i" class="skeleton-item">
     Chargement élément {{ i }}...
   </div>
