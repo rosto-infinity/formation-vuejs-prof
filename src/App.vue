@@ -1,5 +1,8 @@
 <script setup>
-import Directives from './components/DirectivesCond.vue/index.js';
+
+
+import DirectivesCond from './components/DirectivesCond.vue';
+// import Directives from './components/Directives.vue';
 import MessageRendering from './components/MessageRendering.vue';
 
 
@@ -8,6 +11,7 @@ import MessageRendering from './components/MessageRendering.vue';
 <template>
 <!-- <MessageRendering /> -->
 <Directives />
+<DirectivesCond/>
  
 </template>
 
