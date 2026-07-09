@@ -36,6 +36,13 @@ const categories = ref([
     ],
   },
 ]);
+
+
+const isOpen = ref(false);
+
+function toggle() {
+  isOpen.value = !isOpen.value; // Inverse la valeur (true -> false -> true)
+}
 </script>
 
 <template>
@@ -72,7 +79,16 @@ const categories = ref([
     Chargement élément {{ i }}...
   </div>
 
-  <div v-for="category in categories" :key="category.id">
+
+
+
+   <button @click="toggle">
+    {{ isOpen ? "Fermer" : "Ouvrir" }}
+  </button>
+
+  <div v-if="isOpen">
+    Le menu déroulant est ici !
+      <div v-for="category in categories" :key="category.id">
     <h3>{{ category.name }}</h3>
     <ul>
       <!-- --Le v-for à l'intérieur utilise la variable `category` du v-for parent ! -->
@@ -80,5 +96,6 @@ const categories = ref([
         {{ product.name }}
       </li>
     </ul>
+  </div>
   </div>
 </template>
