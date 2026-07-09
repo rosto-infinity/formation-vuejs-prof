@@ -57,7 +57,7 @@ const categories = ref([
     {{ user.name }} - {{ user.email }}
   </div>
 
-  <!-- MAUVAIS ACTE : L'index comme clé (Cause de gros bugs lors des tris) -->
+  <!-- --MAUVAIS ACTE : L'index comme clé (Cause de gros bugs lors des tris) -->
   <div v-for="(user, index) in users" :key="index">
     {{ user.name }}
   </div>
