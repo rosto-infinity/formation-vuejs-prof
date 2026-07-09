@@ -1,5 +1,5 @@
 <script setup>
-import Directives from './components/Directives.vue';
+import Directives from './components/DirectivesCond.vue/index.js';
 import MessageRendering from './components/MessageRendering.vue';
 
 

@@ -68,5 +68,7 @@ const attributeValue = ref("Ceci est une infobulle !");
   <img v-bind="imageAttrs" />
   <!-- Rendu HTML : <img src="/images/avatar.jpg" alt="..." width="100" height="100"> -->
 
-
+ <!-- Vue va générer :votre_nom_d_attribut="Valeur" -->
+  <div :[attributeName]="attributeValue">Survolez-moi avec la souris !</div>
+  <!-- Résultat : <div title="Ceci est une infobulle !">...</div> -->
 </template>
