@@ -1,11 +1,13 @@
 <script setup>
+import Directives from './components/Directives.vue';
 import MessageRendering from './components/MessageRendering.vue';
 
 
 </script>
 
 <template>
-<MessageRendering />
+<!-- <MessageRendering /> -->
+<Directives />
  
 </template>
 
