@@ -2,6 +2,7 @@
 
 
 import DirectivesCond from './components/DirectivesCond.vue';
+import DirectivesFor from './components/DirectivesFor.vue';
 // import Directives from './components/Directives.vue';
 import MessageRendering from './components/MessageRendering.vue';
 
@@ -10,8 +11,9 @@ import MessageRendering from './components/MessageRendering.vue';
 
 <template>
 <!-- <MessageRendering /> -->
-<Directives />
-<DirectivesCond/>
+<!-- <Directives /> -->
+<!-- <DirectivesCond/> -->
+<DirectivesFor/>
  
 </template>
 
