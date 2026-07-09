@@ -75,7 +75,7 @@ const categories = ref([
   <div v-for="category in categories" :key="category.id">
     <h3>{{ category.name }}</h3>
     <ul>
-      <!-- Le v-for à l'intérieur utilise la variable `category` du v-for parent ! -->
+      <!-- --Le v-for à l'intérieur utilise la variable `category` du v-for parent ! -->
       <li v-for="product in category.products" :key="product.id">
         {{ product.name }}
       </li>
