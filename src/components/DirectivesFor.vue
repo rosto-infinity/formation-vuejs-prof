@@ -62,7 +62,7 @@ const categories = ref([
     {{ user.name }}
   </div>
 
-  <!-- #Le v-for sur une Plage de Nombres (Range) -->
+  <!-- #-Le v-for sur une Plage de Nombres (Range) -->
 
   <!-- Affiche 1, 2, 3, 4, 5 -->
   <span v-for="n in 5" :key="n">{{ n }}</span>
