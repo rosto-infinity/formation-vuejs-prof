@@ -51,7 +51,7 @@ function toggle() {
 
   </div>
   <ul>
- <!-- L'index commence à 0, comme en JS -->
+ <!-- --L'index commence à 0, comme en JS -->
  <li v-for="(task, index) in tasks" :key="task.id">
    {{ index + 1 }}. {{ task.text }}
    <span v-if="task.done"></span>
