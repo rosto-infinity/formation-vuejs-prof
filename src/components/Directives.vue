@@ -6,7 +6,7 @@ import { ref, reactive } from "vue";
 const linkUrl = ref("https://vuejs.org");
 const inputId = ref("mon-email-input");
 
-// const id = ref("mon-element");
+// -const id = ref("mon-element");
 const src = ref("/images/favicon.ico");
 // const href = ref("https://exemple.com");
 //2-----------------------------################
