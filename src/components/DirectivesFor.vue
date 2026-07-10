@@ -1,7 +1,7 @@
 <script setup>
 
 import { ref, reactive } from "vue"
-// #Rendu de Liste avec v-for (List Rendering)
+// #-Rendu de Liste avec v-for (List Rendering)
 const fruits = ref(["Pomme", "Banane", "Cerise", "Datte"]);
 
 const tasks = ref([
