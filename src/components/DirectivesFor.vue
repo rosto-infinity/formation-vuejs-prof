@@ -41,7 +41,7 @@ const categories = ref([
 const isOpen = ref(false);
 
 function toggle() {
-  isOpen.value = !isOpen.value; // Inverse la valeur (true -> false -> true)
+  isOpen.value = !isOpen.value; // -Inverse la valeur (true -> false -> true)
 }
 </script>
 
