@@ -42,7 +42,7 @@ const attributeValue = ref("Ceci est une infobulle !");
   <!-- <img :src="imageUrl" alt="Logo de l'app" /> -->
   <img :src alt="Logo de l'app" />
 
-  <!-- On lie l'attribut href -->
+  <!-- -On lie l'attribut href -->
   <a v-bind:href="linkUrl">Site Officiel de Vue.js</a>
 
   <!-- On lie l'attribut id -->
