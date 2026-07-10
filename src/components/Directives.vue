@@ -55,7 +55,7 @@ const attributeValue = ref("Ceci est une infobulle !");
   <button :disabled="isDisabled">Vous ne pouvez pas cliquer ici</button>
 
   <!-- -Puisque isRequired est FAUX, Vue supprime carrément l'attribut -->
-  <!-- Résultat HTML : <input> (pas de required !) -->
+  <!-- -Résultat HTML : <input> (pas de required !) -->
   <input :required="isRequired" />
 
   <!-- Résultat : <input type="checkbox" checked> -->
