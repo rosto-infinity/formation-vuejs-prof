@@ -30,7 +30,7 @@ const imageAttrs = ref({
 });
 
 
-const attributeName = ref("title"); // L'attribut ciblé est "title"
+const attributeName = ref("title"); // -L'attribut ciblé est "title"
 const attributeValue = ref("Ceci est une infobulle !");
 
 
