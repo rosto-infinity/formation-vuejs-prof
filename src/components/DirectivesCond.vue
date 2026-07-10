@@ -37,7 +37,7 @@ const isVisible = ref(true);
 
  <li v-for="user in users" v-if="user.isActive">...</li>
 
-<!-- --BIEN : On enveloppe d'abord, on filtre ensuite -->
+<!-- ----BIEN : On enveloppe d'abord, on filtre ensuite -->
 <template v-for="user in users" :key="user.id">
   <li v-if="user.isActive">{{ user.name }}</li>
 </template>
