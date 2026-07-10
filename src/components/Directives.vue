@@ -14,7 +14,7 @@ const isDisabled = ref(true);
 const isRequired = ref(false);
 const isChecked = ref(true);
 
-// Lier de Multiples Attributs d'un seul coup
+// -Lier de Multiples Attributs d'un seul coup
 const inputAttrs = reactive({
   id: "email-field",
   type: "email",
