@@ -2,7 +2,7 @@
 
 import { ref, reactive } from "vue"
 
-// Rendu Conditionnel avec v-if et v-show (Conditional Rendering)
+// -Rendu Conditionnel avec v-if et v-show (Conditional Rendering)
 // La Directive v-if
   const isLoggedIn = ref(true);
 const hasPermission = ref(true);
