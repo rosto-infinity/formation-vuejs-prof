@@ -2,7 +2,7 @@
 
 import { ref, reactive } from "vue";
 //1-----------------------------################
-// const imageUrl = ref("/images/favicon.ico");
+// -const imageUrl = ref("/images/favicon.ico");
 const linkUrl = ref("https://vuejs.org");
 const inputId = ref("mon-email-input");
 
