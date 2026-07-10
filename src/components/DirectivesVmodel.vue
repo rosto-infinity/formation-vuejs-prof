@@ -1,7 +1,7 @@
 <script setup>
 
 import { ref, reactive } from "vue"
-// Déclaration de la variable réactive
+// -Déclaration de la variable réactive
 const message = ref("")
 </script>
 
