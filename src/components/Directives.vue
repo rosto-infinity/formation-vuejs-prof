@@ -51,10 +51,10 @@ const attributeValue = ref("Ceci est une infobulle !");
 
 
 <!-- 2-----------------------------################ -->
- <!-- Puisque isDisabled est VRAI, le HTML final sera : <button disabled>...</button> -->
+ <!-- -Puisque isDisabled est VRAI, le HTML final sera : <button disabled>...</button> -->
   <button :disabled="isDisabled">Vous ne pouvez pas cliquer ici</button>
 
-  <!-- Puisque isRequired est FAUX, Vue supprime carrément l'attribut -->
+  <!-- -Puisque isRequired est FAUX, Vue supprime carrément l'attribut -->
   <!-- Résultat HTML : <input> (pas de required !) -->
   <input :required="isRequired" />
 
