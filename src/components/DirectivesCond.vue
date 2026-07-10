@@ -8,7 +8,7 @@ import { ref, reactive } from "vue"
 const hasPermission = ref(true);
 
 
-// #La Directive v-show
+// #-La Directive v-show
 const isVisible = ref(true);
 </script>
 
