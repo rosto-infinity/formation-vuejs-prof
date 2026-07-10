@@ -32,7 +32,7 @@ const isVisible = ref(true);
 
   <!-- Si vous utilisez <template>, vous DEVEZ utiliser v-if. Si vous voulez vraiment un v-show, vous devez créer un vrai <div>. -->
 
-<!-- #Le Pire Crime : v-if sur la même ligne qu'un v-for -->
+<!-- #-Le Pire Crime : v-if sur la même ligne qu'un v-for -->
 <!-- Ne mettez JAMAIS un v-if et un v-for sur le même élément ! C'est formellement interdit par l'ESLint officiel de Vue. Le v-if a la priorité la plus forte et tentera de s'exécuter AVANT la boucle de la ligne, ce qui finira immanquablement par un beau crash. -->
 
  <li v-for="user in users" v-if="user.isActive">...</li>
