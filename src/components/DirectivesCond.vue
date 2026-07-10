@@ -42,6 +42,6 @@ const isVisible = ref(true);
   <li v-if="user.isActive">{{ user.name }}</li>
 </template>
 
-<!-- EXCELLENT (La Méthode Royale) : On filtre via une Propriété Calculée (Computed JS) -->
+<!-- -EXCELLENT (La Méthode Royale) : On filtre via une Propriété Calculée (Computed JS) -->
 <li v-for="user in activeUsers" :key="user.id">{{ user.name }}</li>
 </template>
