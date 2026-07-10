@@ -38,7 +38,7 @@ const attributeValue = ref("Ceci est une infobulle !");
 
 <template>
 <!-- //1-----------------------------################ -->
-<!-- On lie (bind) l'attribut src -->
+<!-- -On lie (bind) l'attribut src -->
   <!-- <img :src="imageUrl" alt="Logo de l'app" /> -->
   <img :src alt="Logo de l'app" />
 
